@@ -3,7 +3,11 @@
 
 This program is UNDER CONSTRUCTION 
 
-How to run this program?
+This program is using ZeroMQ, you will need to install pyzmq
+
+See: https://zeromq.org/languages/python/
+
+<b>How to run this program?</b>
 
 <p>1- You will need two terminals, one for the client and one for the server</p>
 <p>2- cd the directory where the program is located</br>
