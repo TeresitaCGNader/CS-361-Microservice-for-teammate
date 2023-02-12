@@ -14,4 +14,8 @@ See: https://zeromq.org/languages/python/
 <p>4- In another terminal run the client using "python client.py"</p>
 <p>The client sends a request to the server and the server will respond sending data. Right now both the client and server have the same placeholder code, so you can implement your individual project in either the client or server.</p>
 
+<b>UML sequence diagram</b>
+![alt text](https://github.com/TeresitaCGNader/CS-361-Microservice-for-teammate/blob/main/UML_sequence_diagram_rand_card_name.jpg)
+
+
 
