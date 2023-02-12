@@ -1,7 +1,7 @@
 #
-#   Hello World client in Python
+#   Random Card Name generator client in Python
 #   Connects REQ socket to tcp://localhost:5555
-#   Sends "Hello" to server, expects "World" back
+#   Sends printme variable to server
 #
 
 import zmq
@@ -20,12 +20,9 @@ print("Connecting to server…")
 socket = context.socket(zmq.REQ)
 socket.connect("tcp://localhost:5555")
 
-#  Do 10 requests, waiting each time for a response
-#for request in range(10):
+#  Do 1 request, waiting each time for a response
 for request in range(1):
     print(f"Sending request {request} …")
-    #socket.send(b"Hello")
-    #socket.send(b"A message from CS361")
     socket.send_string(printme)
 
     #  Get the reply.
