@@ -1,7 +1,7 @@
 #
-#   Hello World server in Python
+#   Random Card Name generator server in Python
 #   Binds REP socket to tcp://*:5555
-#   Expects b"Hello" from client, replies with b"World"
+#   Expects printme variable from client, replies with Random Card Name
 #
 
 import time
@@ -26,6 +26,4 @@ while True:
     time.sleep(1)
 
     #  Send reply back to client
-    #socket.send(b"World")
-    #socket.send(b"A message from CS361")
     socket.send_string(printme)
