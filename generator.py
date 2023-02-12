@@ -7,7 +7,6 @@ import random
 def random_line(fname):
     lines = open(fname).read().splitlines()
     return random.choice(lines)
-#print(random_line('card_list_copy.txt'))
 
 printme = random_line('card_list.txt')
 
